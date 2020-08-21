@@ -381,7 +381,12 @@ export default App;
 - 42:50 Speaker demonstrates again, going back to the app inside of the web browser:
 
   - [L8](#) Refreshing the page, notice that the icon and page title have changed
+
   - [L9](#) Going back to the Dev Tools and the Lighthouse tab within, and clicking the gray circle with line through it "Clear all" button to clear the audit data, again click the <kbd>Generate report</kbd> button. Everything should pass except for one item "Does not redirect HTTP traffic to HTTPS"
+
+    Issue on 2020/08/20: Wallpaper fails to load upon initial app run, though this is resolved upon running the Lighthouse report... Hopefully, this issue will not affect the PWA publishing efforts. Moving on for now as-is.
+
+    Issue on 2020/08/20: Under Lighthouse report "PWA Optimized", we get a gray indicator (instead of green) for "Content is sized correctly for the viewport" indicating that this content has not been made responsive for various viewport sizes.
 
 - 43:50 Speaker states that we will now host our app on Netlify
 
